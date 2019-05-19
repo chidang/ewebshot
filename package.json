@@ -1,0 +1,24 @@
+{
+  "name": "nodewebapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "canvas-image-saver": "^0.2.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~4.1.1",
+    "express": "~4.17.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "node-webshot": "^1.0.3",
+    "rel-to-abs": "^0.1.0",
+    "serve-favicon": "~2.5.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-webshot": "^0.3.0"
+  }
+}

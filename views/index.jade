@@ -1,0 +1,45 @@
+extends layout
+
+block content
+  div.container
+    h1= title
+    form#f_process(action="javascript:;")
+      div.input-group.group-search
+        input#inputUrl(type="text", name="inputUrl", placeholder="Please enter link" class="form-control" required="required")
+        div.input-group-btn
+          input#btn-capture.btn.btn-primary(type="submit" value="Capture web page") 
+      div.input-group.screen-box
+        span.input-group-addon Screen width
+        input#screen-size(type="number" name="screen-size" class="form-control" required="required" value="1280")
+        span.input-group-addon px
+    div.clear     
+    div#tools-container.clearfix
+      a#crop-tool(title="Crop")
+        i.fa.fa-crop
+      a#undo-tool.undo-tool(title="Reset")
+        i.fa.fa-undo
+      a#paint-brush-tool(title="Paint")
+        i.fa.fa-paint-brush
+      a#circle-o(title="Ellipse")
+        i.fa.fa-circle-o
+      a#square-o(title="Rectangle")
+        i.fa.fa-square-o
+      div.input-group.color-picker
+        input#color(type="text", value="#000", class="form-control")
+        span.input-group-addon
+          i
+      a#save-tool(title="Save and share")
+        i.fa.fa-save
+    div#link-container.input-group
+      span.input-group-addon Link
+      input#link-result(type="text", class="form-control")
+      span.input-group-addon
+        a#open-link(href="" target="_blank" title="Open image") Open
+
+  div#canvas-container
+  input#sx(type="hidden", name="sx")
+  input#sy(type="hidden", name="sy")
+  input#swidth(type="hidden", name="swidth")
+  input#sheight(type="hidden", name="sheight")
+  input#img-url(type="hidden", name="img-url")
+  div#main-contain

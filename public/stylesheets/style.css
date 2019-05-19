@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #fff;
+}
+h1{text-align: center;margin-top: 10px;}
+a {
+  color: #00B7FF;
+}
+.container{    
+	width: 100%;
+    margin: 0;
+    background: #fff;
+    top: 0;
+    z-index: 2;
+}
+.clear{clear: both;}
+.group-search{width: 700px;margin: 0 auto;}
+.screen-box{width: 250px;opacity: 0;}
+#tools-container{margin:10px 0; background-color: #eee;  border: 1px solid #ccc; font-size: 25px;width: 410px;display: none;float: left;}
+#tools-container a{margin: 10px;color:#3c3c3c;float: left;}
+#tools-container a:hover, #tools-container a.active{color: #00B7FF;cursor: pointer;}
+#canvas-container{margin: 180px 20px 50px;text-align: center;}
+#myCanvas{box-shadow: 4px 4px 20px #000;}
+.color-picker{width: 130px;margin: 10px;float: left;}
+#main-contain{margin-top: 150px;height: 500px; overflow: auto;display: none;}
+#link-container{opacity: 0; max-width: 500px; margin: 20px 10px;float:left;}
