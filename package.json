@@ -6,7 +6,6 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
     "canvas-image-saver": "^0.2.0",
     "cookie-parser": "~1.4.4",
     "debug": "~4.1.1",
